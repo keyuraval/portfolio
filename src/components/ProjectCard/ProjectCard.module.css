@@ -1,0 +1,160 @@
+.main {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: none;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0);
+    /* width: 100%;
+    margin: 30px; */
+}
+
+.main .description {
+    width: 50%;
+    text-align: center;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.main .description .cardText {
+    padding: 10px 30px;
+}
+
+.main .description .cardText h1 {
+    color: rgb(210, 253, 253);
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.main .description .cardText h3 {
+    line-height: 1.8rem;
+    text-align: justify;
+    margin-bottom: 10px;
+    font-weight: 450;
+}
+
+.main .description .cardText .devicon {
+    max-width: 10em;
+    height: 35px;
+    width: 35px;
+    margin: 5px 10px;
+}
+
+.main .description .cardText .btn-box {
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+    height: 50px;
+}
+
+.main .description .cardText .hire-button,
+.main .description .cardText .talk-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 100%;
+    background-color: #00abfe;
+    color: #ededed;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.main .description .cardText .hire-button:hover,
+.main .description .cardText .talk-button:hover {
+    background-color: #0288f9;
+}
+
+.seelive,
+.viewcode {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 18%;
+    background: transparent;
+    border: 2px solid #00abfe;
+    border-radius: 8px;
+    font-size: 18px;
+    color: #00abfe;
+    margin-right: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.seelive:hover,
+.viewcode:hover {
+    color: #ededed;
+    background-color: #00abfe;
+    cursor: pointer;
+}
+
+.main .image {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.main .image .cardImageDiv {
+    padding: 20px;
+}
+
+.main .image .cardImageDiv img {
+    width: 100%;
+    margin-top: auto;
+    border: 1px solid var(--text-color);
+}
+
+@media only screen and (max-width: 1024px) {
+    .main {
+        flex-direction: column-reverse !important;
+    }
+
+    .main .description {
+        width: 100%;
+    }
+
+    .main .image {
+        width: 100%;
+    }
+
+    .main .image img {
+        border: none;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .main .description .cardText h1 {
+        color: rgb(210, 253, 253);
+        font-size: 28px;
+        font-weight: 600;
+        margin-bottom: 13px;
+    }
+
+    .main .description .cardText {
+        padding: 0 13px;
+        margin: 0% 2% 3% 2%;
+    }
+
+    .main .description .cardText h3 {
+        line-height: 1.8rem;
+        text-align: justify;
+        margin-bottom: 20px;
+        font-size: 18px;
+        font-weight: 400;
+    }
+}

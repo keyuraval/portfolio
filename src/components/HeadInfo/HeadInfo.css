@@ -1,0 +1,354 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #081b29;
+    color: #ededed;
+}
+
+.transition {
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+
+.talk-button:hover {
+    background-color: #00334c !important;
+    color: #d3ebf7 !important;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: 0.3s;
+}
+
+.navbar a:hover,
+.navbar a:active {
+    color: #00abf0;
+}
+
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.hamburger-menu span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #ededed;
+    transition: all 0.3s ease;
+}
+
+.hamburger-menu.active div:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-menu.active div:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger-menu.active div:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.resume-button {
+    display: flex;
+    justify-content: space-between;
+}
+
+.line {
+    width: 100%;
+    height: 2px;
+    background-color: #ededed;
+}
+
+.home {
+    max-height: 100vh;
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    padding: 10% 10% 0;
+}
+
+.home-content {
+    width: 42%;
+    margin-right: 8%;
+}
+
+.home-content h1 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+.home-content h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #00abfe;
+    margin-bottom: 20px;
+}
+
+.home-content p {
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+.btn-box {
+    display: flex;
+    justify-content: space-between;
+    width: 320px;
+    gap: 25px;
+    height: 50px;
+}
+
+.hire-button,
+.talk-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 100%;
+    background-color: #00abfe;
+    color: #ededed;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hire-button:hover,
+.talk-button:hover {
+    background-color: #0288f9;
+}
+
+.btn-box a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 100%;
+    background: transparent;
+    border: 2px solid #00abfe;
+    border-radius: 8px;
+    font-size: 18px;
+    color: #00abfe;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.btn-box a:hover {
+    color: #ededed;
+    background-color: #00abfe;
+}
+
+.home-sci {
+    display: flex;
+    gap: 15px;
+    position: absolute;
+    bottom: 40px;
+    left: 1;
+    width: 100px;
+    justify-content: space-between;
+}
+
+.home-sci a {
+    margin-left: 0;
+    gap: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    height: 44px;
+    background: transparent;
+    border: 2px solid #00abfe;
+    border-radius: 72%;
+    font-size: 20px;
+    color: #00abfe;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.home-sci a:hover {
+    background-color: #00abfe;
+    color: #ededed;
+}
+
+.right-side {
+    width: 50%;
+}
+
+.navbar.show {
+    display: flex;
+}
+
+@media screen and (max-width: 1140px) and (min-width: 768px) {
+    .header {
+        position: sticky;
+    }
+
+    .home-sci {
+        display: none;
+    }
+
+    .home {
+        padding: 6% 10% 1% 10%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .header {
+        padding: 20px 5%;
+    }
+
+    .navbar {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 20px;
+    }
+
+    .navbar a {
+        margin: 10px 0;
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    .navbar a {
+        margin: 10px 0;
+    }
+
+    /* .header {
+        position: sticky;
+    } */
+
+
+    .home {
+        padding: 0;
+        margin: 10% 2% 6% 2%;
+        height: unset;
+        max-height: unset;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .home-content {
+        margin-top: 50px;
+        width: 100%;
+        margin-right: 0;
+        max-width: none;
+        padding: 0 13px;
+        text-align: start;
+    }
+
+    .home-content h1 {
+        /* text-align: center; */
+        font-size: 29px;
+        margin-bottom: 20px;
+    }
+
+    .home-content h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .home-content p {
+        text-align: justify;
+    }
+
+    .btn-box {
+        width: 100%;
+        justify-content: space-evenly;
+        margin-bottom: 20px;
+    }
+
+    .home-sci {
+        display: none;
+        /* position: static;
+        margin-top: 40px; */
+    }
+
+    .right-side {
+        width: 100% !important;
+        height: auto;
+        padding: 5% 3% 0 3%;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .content {
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .header {
+        position: fixed;
+    }
+
+    .home-content {
+        margin-top: 72px;
+    }
+
+    .home-sci {
+        display: none;
+    }
+}
