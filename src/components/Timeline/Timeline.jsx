@@ -30,11 +30,11 @@ const Timeline = () => {
                         iconStyle={{ background: "#081b29", color: "#f8efef" }}
                         icon={<WorkIcon />}
                     >
-                        <h3 className="vertical-timeline-element-title">Frontend Developer Intern</h3>
-                        <h4 className="vertical-timeline-element-subtitle">Remote</h4>
+                        <h3 className="vertical-timeline-element-title">Frontend Developer Intern@Talrn</h3>
+                        <h4 className="vertical-timeline-element-subtitle">Remote(Oct 2022-Dec 2022)</h4>
                         <p>
                             Worked as an Intern for 3 months, and Managed, Designed & Developed a carrer page of the company.
-                        </p>6
+                        </p>
                     </VerticalTimelineElement>
 
 
