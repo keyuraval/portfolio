@@ -209,12 +209,12 @@ const HeadInfo = () => {
                         Here are some of my projects:
                         <br />
                         <br />
-                        - Project 1: Recipe Website
+                        - Project 1: Findo
                         <br />
                         <br />
-                        - Project 2: MetaBlock Technologies Website
+                        - Project 2: GoFood
                         <br />
-                        <br />- Project 3: Agrisar
+                        <br />- Project 3: LinkTree
 
                         <br /> <br /> Get more project details in Projects section
                         {/* Add more project details */}
