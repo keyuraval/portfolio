@@ -21,6 +21,21 @@ const Timeline = () => {
 
                 <VerticalTimeline>
 
+                <VerticalTimelineElement
+                        className="vertical-timeline-element--work"
+                        contentStyle={{ background: "rgb(13 55 76)", color: "#fff" }}
+                        contentArrowStyle={{ borderRight: "7px solid  rgb(13 55 76)" }}
+                        date="Nov 2022 - Apr 2023"
+                        iconStyle={{ background: "#081b29", color: "#f8efef" }}
+                        icon={<WorkIcon />}
+                    >
+                        <h3 className="vertical-timeline-element-title">Research Intern@RaapidAI</h3>
+                        <h4 className="vertical-timeline-element-subtitle">Remote(Jan 2024-Current)</h4>
+                        <p>
+                            Working as Research intern at RaapidAI.Contributing to DL pipeline using Python,MySql and DVC.
+                        </p>
+                    </VerticalTimelineElement>
+
 
                     <VerticalTimelineElement
                         className="vertical-timeline-element--work"
