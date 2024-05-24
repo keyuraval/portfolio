@@ -1,10 +1,10 @@
 export const projects = [{
-    title: "LinkTree",
-    content: `Tool for all the creators to keep their socials and links on a single URL.Built using NextJS and Tailwind CSS.Backend is built using NodeJS and ExpressJs.MongoDB is used as database.`,
+    title: "PayEasy",
+    content: `A robust wallet and payment system akin to Paytm, offering seamless transactions and user-friendly interfaces.`,
     // link: "https://recipesite.onrender.com/",
-    image: "ltr.png",
-    stack: ["CSS", "JavaScript", "React", "NodeJS", "Mongo"],
-    github: "https://github.com/keyuraval/linktree-bt",
+    image: "",
+    stack: ["TailwindCSS", "JavaScript", "React", "NodeJS", "Mongo"],
+    github: "https://github.com/keyuraval/PayEasy",
 },
 {
     title: "GoFood",
